@@ -1,0 +1,25 @@
+{
+	"pages": {
+		"login": {
+			"title": "Login",
+			"description": "Login to your account"
+		},
+		"home": {
+			"title": "Home",
+			"description": "Home page"
+		},
+		"NotFoundPage": {
+			"title": "Not found page",
+			"description": "Not found page"
+		}
+	},
+	"common": {
+		"pageTitle": "Sample Feed App",
+		"footer": {
+			"copy_right": "Copyright (c) 2022 by Metin"
+		}
+	},
+	"error": {
+		"generalError": "Sorry.. there was an error"
+	}
+}

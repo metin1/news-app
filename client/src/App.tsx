@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Suspense} from 'react';
+
+
+import ThemeProvider from 'components/ThemeContext'
+import Loading from 'components/Loading'
+import ErrorMessage from 'components/ErrorMessage'
+
+import AppRoutes from 'routes'
+
+import {
+  globalErrorStatusCodeSelector,
+  globalLoadingSelector,
+} from 'store/selectors'
+
 import './App.css';
+import 'locales/i18n'
+import { useSelector } from 'react-redux'
 
 function App() {
+  const isLoading = useSelector(globalLoadingSelector)
+  const errorStatusCode = useSelector(globalErrorStatusCodeSelector)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      {!!errorStatusCode && <ErrorMessage />}
+      <Suspense fallback={<Loading />}>
+        <AppRoutes />
+        <Loading />
+      </Suspense>
+    </ThemeProvider>
   );
 }
 

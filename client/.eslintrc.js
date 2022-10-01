@@ -53,7 +53,7 @@ module.exports = {
     'jest/valid-expect': 'error',
     'simple-import-sort/exports': 'error',
     'simple-import-sort/imports': [
-      'error',
+      'warn',
       {
         groups: [
           ['^react', '^@?\\w'],
