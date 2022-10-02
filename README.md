@@ -1,6 +1,6 @@
 # News App
 
-![](https://github.com/metin1/news-app/blob/master/public/ms-icon-300.png?raw=true)
+![](https://github.com/metin1/news-app/blob/master/public/icon-384x384.png?raw=true)
 
 ---
 
@@ -25,6 +25,17 @@ Project is created with:
 - Node version: 16.17.1
 - NPM version: 8.15.0
 - FE - React - Typescript
+
+## Demo Application
+[Click for the demo site.](https://news-feeds-app.herokuapp.com/)
+
+# General View and Pages
+### Login
+![](https://github.com/metin1/news-app/blob/master/public/iamges/loginForm.png?raw=true)
+### Feeds
+![](https://github.com/metin1/news-app/blob/master/public/iamges/homePage.png?raw=true)
+###  Profile detail
+![](https://github.com/metin1/news-app/blob/master/public/iamges/profilePage.png?raw=true)
 
 ## Setup
 
@@ -53,6 +64,10 @@ npm run test
 - Login
 - Get feeds
 - Profile detail
+- Dark and light theme
+- Services
+- PWA
+-
 
 ## Reference link
 
@@ -82,8 +97,4 @@ This project is licensed by the MIT License.
 
 ### TODO
 - Change uuid with jwt token
-- Design error message box
-- refactor storybook
 - create docker compose file
-- add favicon
-- add images to readme file
