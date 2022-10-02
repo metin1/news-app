@@ -4,6 +4,7 @@ import Box from 'components/Box'
 export const Button = (props: any) => {
   return (
     <Box
+      {...props}
       as='button'
       color={props.color || 'primary'}
       backgroundColor={props.bg || 'card'}

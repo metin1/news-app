@@ -6,6 +6,7 @@ import Box from 'components/Box'
 
 import { globalStateSelector } from 'store/selectors'
 import { clearErrorMessage } from 'store/global/globalActions'
+import Button from 'components/Button/Button'
 
 const customStyles = {
   content: {
@@ -91,13 +92,19 @@ const ErrorMessage = () => {
       </Box>
 
       <Box
-        as='button'
-        width={200}
+        display='flex'
+        flexDirection='column'
+        justifyContent='center'
+        alignItems='center'
+      >
+      <Button
+        width='100%'
         id='close'
         onClick={handleClick}
         maxWidth='200px'
       >
         Close
+        </Button>
       </Box>
     </Modal>
   )
