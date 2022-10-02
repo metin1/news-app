@@ -8,6 +8,7 @@ import { useFormik } from 'formik'
 import * as Yup from 'yup'
 import Box from 'components/Box'
 import Input from 'components/Input'
+import Button from 'components/Button'
 
 const Schema = Yup.object().shape({
   username: Yup.string()
@@ -88,18 +89,7 @@ const Login = () => {
             placeholder='Username'
           />
           <Box display='flex' justifyContent='center' width='100%'></Box>
-          <Box
-            as='button'
-            color='primary'
-            backgroundColor='card'
-            type='submit'
-            width='100%'
-            height={48}
-            fontSize={16}
-            fontWeight={600}
-          >
-            Login
-          </Box>
+          <Button>Login</Button>
         </Box>
       </Box>
     </form>
