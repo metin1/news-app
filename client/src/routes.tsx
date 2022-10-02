@@ -10,6 +10,8 @@ import Box from 'components/Box'
 import Container from 'components/Container'
 import LoginPage from 'pages/LoginPage'
 import ProfilePage from 'pages/ProfilePage'
+import ProtectedRoute from 'shared/auth/ProtectedRoute'
+
 
 const AppRoutes = () => {
   return (
@@ -20,7 +22,14 @@ const AppRoutes = () => {
           <Route path='/' element={<HomePage />} />
           <Route path='/feed' element={<HomePage />} />
           <Route path='/login' element={<LoginPage />} />
-          <Route path='/profile' element={<ProfilePage />} />
+          <Route
+            path="/profile"
+            element={
+              <ProtectedRoute>
+                <ProfilePage />
+              </ProtectedRoute>
+            }
+          />
           <Route path='*' element={<NotFoundPage />} />
         </Routes>
       </Container>
