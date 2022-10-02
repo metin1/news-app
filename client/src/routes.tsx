@@ -12,18 +12,17 @@ import LoginPage from 'pages/LoginPage'
 import ProfilePage from 'pages/ProfilePage'
 import ProtectedRoute from 'shared/auth/ProtectedRoute'
 
-
 const AppRoutes = () => {
   return (
     <Box>
       <Header />
-        <Container>
+      <Container>
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/feed' element={<HomePage />} />
           <Route path='/login' element={<LoginPage />} />
           <Route
-            path="/profile"
+            path='/profile'
             element={
               <ProtectedRoute>
                 <ProfilePage />
