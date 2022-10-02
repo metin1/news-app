@@ -13,6 +13,7 @@
 - [Features](#features)
 - [Reference link](#reference-link)
 - [App Info](#app-info)
+- [Todo](#TODO)
 
 ## General info
 
@@ -64,10 +65,12 @@ npm run test
 - Login
 - Get feeds
 - Profile detail
+- Infinite scroll
+- Global API error control
 - Dark and light theme
 - Services
 - PWA
--
+- Latest versions of react, react-router and redux
 
 ## Reference link
 
@@ -95,6 +98,6 @@ Metin İşcan
 This project is licensed by the MIT License.
 
 
-### TODO
+## TODO
 - Change uuid with jwt token
 - create docker compose file
