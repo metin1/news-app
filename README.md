@@ -32,11 +32,11 @@ Project is created with:
 
 # General View and Pages
 ### Login
-![](https://github.com/metin1/news-app/blob/master/client/public/iamges/loginForm.png?raw=true)
+![](https://github.com/metin1/news-app/blob/master/client/public/images/loginForm.png?raw=true)
 ### Feeds
-![](https://github.com/metin1/news-app/blob/master/client/public/iamges/homePage.png?raw=true)
+![](https://github.com/metin1/news-app/blob/master/client/public/images/homePage.png?raw=true)
 ###  Profile detail
-![](https://github.com/metin1/news-app/blob/master/client/public/iamges/profilePage.png?raw=true)
+![](https://github.com/metin1/news-app/blob/master/client/public/images/profilePage.png?raw=true)
 
 ## Setup
 
