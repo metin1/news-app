@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { login } from 'store/auth/authActions'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 import { useFormik } from 'formik'
 
@@ -21,10 +21,6 @@ const Schema = Yup.object().shape({
     .required('Password is required'),
 })
 
-const initialValues = {
-  username: '',
-  password: '',
-}
 const Login = () => {
   const dispatch = useDispatch()
 
@@ -70,9 +66,7 @@ const Login = () => {
             id='username'
             type='text'
             name='username'
-            error={
-              formik.touched.username && (formik.errors.username as string)
-            }
+            error={formik.errors.username as string}
             fullWidth
             onChange={formik.handleChange}
             value={formik.values?.username || ''}
@@ -84,7 +78,7 @@ const Login = () => {
             name='password'
             onChange={formik.handleChange}
             required
-            error={formik.touched.username && formik.errors.password}
+            error={formik.errors.password}
             value={formik.values?.password || ''}
             placeholder='Username'
           />
