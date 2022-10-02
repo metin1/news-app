@@ -67,6 +67,7 @@ npm run test
 - Profile detail
 - Infinite scroll
 - Global API error control
+- Global loading control
 - Dark and light theme
 - Services
 - PWA
@@ -101,3 +102,4 @@ This project is licensed by the MIT License.
 ## TODO
 - Change uuid with jwt token
 - create docker compose file
+- search news
