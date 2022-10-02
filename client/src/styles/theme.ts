@@ -5,6 +5,7 @@ export const colors = {
   background: '#60A3D9',
   grey: '#5e5e5e',
   primary: '#a0d5ff',
+  contrastText: '#424242',
   lightGrey: '#a3a3a3',
   heading: '#E1EFFF',
   border: '#5e5e5e',
@@ -17,7 +18,8 @@ export const colors = {
   modes: {
     dark: {
       alert: 'red',
-      primary: '#5e5e5e',
+      primary: '#a2a2a2',
+      contrastText: '#b5bbbd',
       background: '#003B73',
       grey: '#5e5e5e',
       lightGrey: '#a3a3a3',
@@ -26,7 +28,7 @@ export const colors = {
       card: '#00274c',
       text: '#868e96',
       detail: '#036280',
-      footer: '#E1EFFF',
+      footer: '#91a2b6',
       link: '#1890ff',
       rate: '#1890ff',
     },

@@ -10,6 +10,7 @@ const Footer: React.FC = () => {
       justifyContent='center'
       alignItems='center'
       bg='lightgrey'
+      backgroundColor='footer'
       width='100%'
       height='48px'
       maxHeight='48px'

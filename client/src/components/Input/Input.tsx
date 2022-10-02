@@ -24,7 +24,7 @@ export const Input = (props: any) => {
       width='100%'
       mb={4}
     >
-      {props.label && <Box as='label' mb={1} htmlFor={props.name}>{props.label}</Box>}
+      {props.label && <Box as='label' color='contrastText' mb={1} htmlFor={props.name}>{props.label}</Box>}
       <Box
         {...props}
         as={StyledInput}
