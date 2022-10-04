@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "This Application List of Coffees, filter by coffee categories and getting search result. ",
   "main": "server.js",
-  "engines": {
-    "node": "16.17.1",
-    "npm": "8.15.0"
-  },
   "scripts": {
     "test": "jest --coverage --logHeapUsage --maxWorkers=2 --testPathPattern=__tests__/unit",
     "start": "nodemon server.js",
